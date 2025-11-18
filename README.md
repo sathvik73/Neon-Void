@@ -1,5 +1,5 @@
 # Neon-Void
-An Asteroid shooter game
+An Asteroid shooter game (completely vibe coded)
 
 Controls: Use WASD or Arrow Keys to move (with physics-based inertia) and the Mouse to aim and shoot.
 
