@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Void: Asteroid Shooter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- HUD -->
+    <div id="ui-layer">
+        <div class="hud-text">SCORE: <span id="scoreEl">0</span></div>
+        <div class="hud-text" style="font-size: 14px; color: #666;">FPS: <span id="fpsEl">60</span></div>
+    </div>
+
+    <!-- Start Screen -->
+    <div id="start-screen">
+        <h1>Neon Void</h1>
+        <p class="instructions">
+            Use <span class="key">W</span><span class="key">A</span><span class="key">S</span><span class="key">D</span> or Arrow Keys to Move.<br>
+            Aim with <span class="key">MOUSE</span> and <span class="key">CLICK</span> to Shoot.<br>
+            Destroy asteroids to survive. Don't let them touch you.
+        </p>
+        <button class="btn" id="startBtn">Initialize System</button>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="game-over-screen" class="hidden">
+        <h1>Mission Failed</h1>
+        <p class="instructions">Final Score: <span id="finalScore">0</span></p>
+        <button class="btn" id="restartBtn">Reboot System</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
